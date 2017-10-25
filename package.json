@@ -1,0 +1,15 @@
+{
+  "name": "gamebook",
+  "version": "1.0.0",
+  "description": "Collection of video games and their reviews",
+  "main": "gamebook.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "y"
+  },
+  "author": "Rudra Nil Basu",
+  "license": "ISC"
+}
