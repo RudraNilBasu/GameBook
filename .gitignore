@@ -1,3 +1,6 @@
+# File containing the database login information of the user
+db_info.js
+
 # Logs
 logs
 *.log

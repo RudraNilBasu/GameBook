@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GameBook | Add and review games</title>
+</head>
+<body>
+
+<h1>Any new games you want to add?</h1>
+<form action = "/upload" method="POST">
+	<label>Name of the Game: </label>
+	<input type="text" name="game_name" id="game_name" required="">
+
+	<br>
+
+	<label>Genre: </label>
+	<input type="text" name="genre" id="genre" required="">
+
+	<br>
+
+	<!--
+	<label>Rating:</label>
+	<input type="select" name=""  name="rating" id="rating">
+		<option value="rating_1">Very Bad</option>
+		<option value="rating_2">Ok</option>
+		<option value="rating_3">Good</option>
+		<option value="rating_4">Very Good</option>
+		<option value="rating_5">Excellent</option>
+	-->
+
+	<label>Rating: </label>
+	<input type="number" maxlength="1" size="1" name="rating" id="rating" required="" min="1" max="5">
+
+	<br>
+
+	<label>Review: </label>
+	<input type="text" name="review" id="review" required="" size="35">
+
+	<br>
+
+	<button type="submit">Submit</button>
+
+	<br>
+
+	<button type="reset">Reset</button>
+</form>
+
+</body>
+</html>
