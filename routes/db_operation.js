@@ -31,3 +31,17 @@ exports.upload = function(req, res) {
                         console.log("Record(s) added.");
         });
 }
+
+exports.show = function(display) {
+        connection.query('SELECT * FROM Games', function(err, results, fields) {
+                if (err) {
+                        console.log("ERROR in insertion: " + err);
+                } else {
+                        display(results);
+                }
+        });
+}
+
+exports.getConnection = function () {
+        return connection;
+}

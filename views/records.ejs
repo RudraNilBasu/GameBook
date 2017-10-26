@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Your Game Library</title>
+</head>
+<body>
+
+<h1> Your Game Library!</h1>
+
+<% if (games.length == 0) { %>
+	<p>Your Library seems to be empty! That's okay, you can add to the library!</p>
+<% } %>
+
+<% for (var i = 0; i < games.length; i++) { %>
+
+<h1><%= games[i].name %></h1>
+<p><%= games[i].genre %></p>
+<p><%= games[i].Rating %> / 5</p>
+<p><%= games[i].review %></p>
+
+<hr>
+
+<% } %>
+
+<p>To add to the library, click <a href="/">here</a>.</p>
+
+</body>
+</html>

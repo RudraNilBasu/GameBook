@@ -28,4 +28,20 @@ app.post('/upload', function(req, res) {
         console.log(game_description_json);
 });
 
+app.get('/records', function(req, res) {
+        var display = function(_games) {
+                res.render("records", {games: _games});
+        }
+        db.show(display);
+        /*
+        var connection = db.getConnection();
+        connection.query('SELECT * FROM Games', function (err, results, fields) {
+                if (err)
+                        res.send("Error in displaying results: " + err);
+                else
+                        display(results);
+        });
+        */
+});
+
 app.listen(8080);
