@@ -18,9 +18,19 @@
 <p><%= games[i].Rating %> / 5</p>
 <p><%= games[i].review %></p>
 
+<!--<p>Edit | <a href="#" onClick='alert("Delete: <%= games[i].name %>")' >Delete</a></p>-->
+<p>Edit | <a href="" onClick="return abc(<%= games[i].id %>);" >Delete</a></p>
+
 <hr>
 
 <% } %>
+
+<script>
+function abc(name) {
+        alert("Delete: " + name);
+        <% del(1) %>
+}
+</script>
 
 <p>To add to the library, click <a href="/">here</a>.</p>
 

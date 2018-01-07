@@ -42,6 +42,17 @@ exports.show = function(display) {
         });
 }
 
+exports.deleteEntry = function(id) {
+        console.log("Deleting: " + id);
+        connection.query('DELETE FROM Games WHERE id = ?', id, function(err, results, fields) {
+                if (err) {
+                        console.log("Error in deletion: " + err);
+                } else {
+                        console.log("Deleted: " + id);
+                }
+        });
+}
+
 exports.getConnection = function () {
         return connection;
 }

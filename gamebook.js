@@ -30,7 +30,7 @@ app.post('/upload', function(req, res) {
 
 app.get('/records', function(req, res) {
         var display = function(_games) {
-                res.render("records", {games: _games});
+                res.render("records", {games: _games, del: _del});
         }
         db.show(display);
         /*
@@ -43,5 +43,10 @@ app.get('/records', function(req, res) {
         });
         */
 });
+
+function _del(id) {
+        console.log("Delete: " + id);
+        db.deleteEntry(3);
+}
 
 app.listen(8080);
