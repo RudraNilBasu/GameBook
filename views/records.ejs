@@ -16,7 +16,7 @@
 <h1><%= games[i].name %></h1>
 <p><%= games[i].genre %></p>
 <p><%= games[i].Rating %> / 5</p>
-<p><%= games[i].review %></p>
+<%- parser(games[i].review) %>
 
 <!--<p>Edit | <a href="#" onClick='alert("Delete: <%= games[i].name %>")' >Delete</a></p>-->
 <p>Edit | <a href="" onClick="return abc(<%= games[i].id %>);" >Delete</a></p>

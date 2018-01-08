@@ -1,6 +1,7 @@
 var express = require('express');
 var path = require('path');
 var bodyParser = require('body-parser');
+var md = require('markdown-it')();
 
 var db = require('./routes/db_operation');
 
@@ -30,7 +31,7 @@ app.post('/upload', function(req, res) {
 
 app.get('/records', function(req, res) {
         var display = function(_games) {
-                res.render("records", {games: _games, del: _del});
+                res.render("records", {games: _games, del: _del, parser: markdownParser});
         }
         db.show(display);
         /*
@@ -47,6 +48,10 @@ app.get('/records', function(req, res) {
 function _del(id) {
         console.log("Delete: " + id);
         db.deleteEntry(3);
+}
+
+function markdownParser(string) {
+        return md.render(string);
 }
 
 app.listen(8080);
