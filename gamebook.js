@@ -25,7 +25,7 @@ app.post('/upload', function(req, res) {
                                 review: req.body.review
                         }
                         );
-        res.render("uploaded", {game: game_description_json});
+        res.render("uploaded", {game: game_description_json, parser: markdownParser});
         console.log(game_description_json);
 });
 

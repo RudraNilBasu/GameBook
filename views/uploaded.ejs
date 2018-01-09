@@ -10,7 +10,7 @@
 <p>Name: <%= game[0].game_name %></p>
 <p>Genre: <%= game[0].genre %></p>
 <p>Rating: <%= game[0].rating %></p>
-<p>Review: <%= game[0].review %></p>
+<p>Review: <%- parser(game[0].review) %></p>
 
 <p>To add more, click <a href="/">here</a>. To view all the records, click <a href="/records">here</a></p>
 
