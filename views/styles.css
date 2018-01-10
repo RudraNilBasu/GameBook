@@ -1,0 +1,95 @@
+input[type=text], select {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	background-color: #282828;
+	color: white;
+	font-family: 'Roboto Slab';
+	font-weight: bold;
+}
+
+#time {
+	color: white;
+}
+
+input[type=email], select {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	background-color: #282828;
+	color: white;
+}
+
+.required-indicator {
+	color: red;
+}
+
+input[type=submit] {
+	-o-transition:.5s;
+	-ms-transition:.5s;
+	-moz-transition:.5s;
+	-webkit-transition:.5s;
+	/* ...and now for the proper property */
+	transition:.5s;
+	width: 120px;
+	background-color: #6f3684;/*#8e40aa;/*#4b0066;/*#4CAF50;*/
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+input[type=submit]:hover {
+	background-color: #282828;/*45a049;*/
+}
+
+input[type=reset] {
+	-o-transition:.5s;
+	-ms-transition:.5s;
+	-moz-transition:.5s;
+	-webkit-transition:.5s;
+	/* ...and now for the proper property */
+	transition:.5s;
+	width: 120px;
+	background-color: #6f3684;/*#4CAF50;*/
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+input[type=reset]:hover {
+	background-color: #242026;/*#282828;/*45a049;*/
+}
+
+div {
+	border-radius: 5px;
+	background-color: #333333;/*#f2f2f2;*/
+	padding: 60px;
+	color: white;
+	font-size: 20px;
+	font-family: 'Roboto Slab', arial, serif;
+	/*font-weight: thin;*/
+}
+
+body {
+	padding: 20px;
+	background-color: #191919;/*#39004d;*/
+}
+
+label {
+	display: block;
+	margin-bottom: 20px;
+}
